@@ -129,14 +129,12 @@ body {
    background-color: var(--lightpink-color);
    height: 160px;
 }
-
 .header__content {
    display: flex;
    padding: 20px 0 40px 0;
    justify-content: space-between;
    align-items: flex-end;
 }
-
 .header__leftside {
    display: flex;
    gap: 60px;
@@ -149,35 +147,28 @@ body {
 .menu__body {
    display: flex;
 }
-
 .menu__list:not(:last-child) {
    margin-right: 30px;
 }
-
 .menu__link {
    color: var(--darkblue-color);
    line-height: 26px;
    transition: color 0.1s ease 0s;
 }
-
 .menu__link:focus {
    color: var(--violet-color);
 }
-
 .menu__link:hover {
    color: #424e5c;
 }
-
 .menu__link:active:focus {
    color: var(--orange-color);
    text-decoration: underline;
 }
-
 .header__user-icon {
    cursor: pointer;
    transition: color 0.3s ease 0s;
 }
-
 .header__user-icon:hover #Union__Stroke {
    fill: #6818d0;
 }
@@ -189,7 +180,6 @@ body {
 .banner {
    position: relative;
 }
-
 .banner__content {
    padding: 50px 0;
    display: flex;
@@ -260,7 +250,6 @@ body {
    font-weight: 400;
    line-height: 26px;
 }
-
 .row__blog-continue {
    display: flex;
    justify-content: flex-end;
@@ -274,7 +263,6 @@ body {
    text-decoration: underline;
    transition: all 0.3s ease 0s;
 }
-
 .open-blog:hover {
    color: var(--lightpink-color);
    text-decoration: underline;
@@ -294,3 +282,146 @@ body {
 .event__content {
    padding: 70px 0;
 }
+.text__list li {
+   list-style: disc;
+}
+.event__title {
+   color: var(--darkblue-color);
+   font-size: 34px;
+   font-weight: 500;
+   line-height: 44px;
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 60px;
+}
+.event__subtitle {
+   color: var(--darkblue-color);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+   text-align: center;
+   margin-bottom: 60px;
+   padding: 0 48px;
+}
+.event__profile {
+   display: flex;
+   gap: 13px;
+   margin-bottom: 60px;
+}
+.profile__image {
+   position: relative;
+}
+.profile-block {
+   display: flex;
+   flex-direction: column;
+   max-width: 507px;
+}
+.profile-block_title {
+   color: var(--orange-color);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+   text-align: left;
+}
+.profile-block_text {
+   color: var(--darkblue-color);
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: left;
+}
+.profile__comment {
+   color: var(--darkblue-color);
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: center;
+   margin-bottom: 60px;
+}
+.image__caption {
+   color: #8693a4;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: center;
+   margin: 10px 0 60px 0;
+}
+.event__middle-text {
+   color: var(--darkblue-color);
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: left;
+   margin-bottom: 60px;
+}
+.discourse-text {
+   color: var(--violet-color);
+   font-size: 28px;
+   font-weight: 500;
+   line-height: 36px;
+   text-align: left;
+   box-sizing: border-box;
+   border-left: 8px solid rgb(240, 135, 60);
+   padding-left: 48px;
+   margin-bottom: 60px;
+}
+.startup-title-context {
+   color: var(--darkblue-color);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+   text-align: left;
+   margin-bottom: 24px;
+}
+.text__list {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   padding-left: 26px;
+}
+.text__list li {
+   color: var(--darkblue-color);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: left;
+}
+.event__violet-block-text {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   margin: 36px 0 60px 0;
+   background-color: var(--violet-color);
+   padding: 20px;
+}
+.event__violet-title {
+   color: var(--white-color);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+   text-align: center;
+}
+.event__violet-subtitle {
+   color: var(--white-color);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: center;
+}
+.event__success :first-child {
+   color: var(--darkblue-color);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+   text-align: left;
+   margin-bottom: 24px;
+}
+.event__success :last-child {
+   color: var(--darkblue-color);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: left;
+}
+
+/* ==============Gallery================= */
