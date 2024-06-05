@@ -104,13 +104,18 @@ h6 {
    margin: 0 auto;
 }
 
-[class*='_&container'] {
+[class*='_&836&container'] {
    max-width: 836px;
    margin: 0 auto;
 }
 
 [class*='_&970&container'] {
    max-width: 970px;
+   margin: 0 auto;
+}
+
+[class*='_&1090&container'] {
+   max-width: 1090px;
    margin: 0 auto;
 }
 
@@ -470,3 +475,75 @@ body {
 /* Сделать переключение по клику */
 
 /* ==============Resident================= */
+
+.resident {
+   background-color: var(--lightpink-color);
+}
+.resident__content {
+   padding: 100px 0;
+}
+.resident__title {
+   color: var(--darkblue-color);
+   font-size: 34px;
+   font-weight: 500;
+   line-height: 44px;
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 60px;
+}
+.resident__columns {
+   display: flex;
+}
+.resident__column {
+   display: flex;
+   flex-direction: column;
+}
+.resident__column__item {
+}
+.item__column {
+   background-color: var(--white-color);
+   width: 505px;
+   padding: 30px 35px 60px 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   border-radius: 0px 20px 0px 20px;
+}
+.item__column-title {
+   color: var(--violet-color);
+   font-size: 28px;
+   font-weight: 500;
+   line-height: 36px;
+   text-align: left;
+}
+.item__column-image :first-child {
+   margin-bottom: 16px;
+}
+.item__column-image :last-child {
+   color: var(--darkblue-color);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: left;
+}
+.item__column__link {
+   display: flex;
+   justify-content: space-between;
+}
+.item__column__link :first-child {
+   color: var(--violet-color);
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: left;
+}
+.item__column__link :last-child {
+   color: var(--orange-color);
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 21px;
+   text-decoration-line: underline;
+}
+.item__column__list li {
+   list-style: disc;
+}
