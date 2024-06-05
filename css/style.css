@@ -493,12 +493,12 @@ body {
 }
 .resident__columns {
    display: flex;
+   gap: 80px;
 }
 .resident__column {
    display: flex;
    flex-direction: column;
-}
-.resident__column__item {
+   gap: 60px;
 }
 .item__column {
    background-color: var(--white-color);
@@ -529,6 +529,7 @@ body {
 .item__column__link {
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 .item__column__link :first-child {
    color: var(--violet-color);
@@ -544,6 +545,95 @@ body {
    line-height: 21px;
    text-decoration-line: underline;
 }
+.item__column__list {
+   display: flex;
+   flex-direction: column;
+   color: rgb(0, 0, 0);
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 18px;
+   padding-left: 25px;
+   gap: 10px;
+}
 .item__column__list li {
    list-style: disc;
+}
+
+/* ===============Сommunicate================ */
+
+.communicate {
+   background-color: var(--white-color);
+   position: relative;
+}
+.communicate__content {
+   padding: 50px 0;
+   display: flex;
+   gap: 100px;
+}
+.communicate__block-text {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+.communicate__title {
+   color: var(--darkblue-color);
+   font-size: 34px;
+   font-weight: 500;
+   line-height: 44px;
+   text-align: left;
+   text-transform: uppercase;
+   margin-bottom: 40px;
+}
+.communicate__adress-block {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 30px;
+}
+.communicate__adress-block :first-child {
+   color: var(--violet-color);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+}
+.communicate__adress-block :last-child {
+   color: var(--darkblue-color);
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 22px;
+}
+.communicate__tel-block {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 120px;
+}
+.communicate__tel-block :first-child {
+   color: var(--violet-color);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+}
+.communicate__tel-block :last-child {
+   color: var(--darkblue-color);
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 22px;
+}
+.communicate__social-text {
+   color: var(--violet-color);
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 34px;
+   margin-bottom: 30px;
+}
+.communicate__social__link {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}
+.communicate__social__link a {
+   width: 32px;
+   height: 32px;
+   background-color: inherit;
 }
