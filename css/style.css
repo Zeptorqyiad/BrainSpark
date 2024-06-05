@@ -109,6 +109,11 @@ h6 {
    margin: 0 auto;
 }
 
+[class*='_&970&container'] {
+   max-width: 970px;
+   margin: 0 auto;
+}
+
 .wrapper {
    overflow: hidden;
    display: flex;
