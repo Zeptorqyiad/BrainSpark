@@ -282,6 +282,8 @@ body {
    text-decoration: underline;
 }
 
+/* Сделать раскрытие элементов */
+
 /* ==============Event================= */
 
 .event__content {
@@ -430,3 +432,41 @@ body {
 }
 
 /* ==============Gallery================= */
+
+.gallery__content {
+   padding: 20px 0 50px 0;
+}
+.gallery__title {
+   color: var(--darkblue-color);
+   font-size: 34px;
+   font-weight: 500;
+   line-height: 44px;
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 60px;
+}
+.gallery__all-photo {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.gallery__main-photo img {
+   width: 970px;
+   height: 690px;
+   object-fit: cover;
+}
+.gallery__mini-photo {
+   display: flex;
+   flex-wrap: nowrap;
+   gap: 30px;
+}
+.gallery__mini-photo img {
+   width: 170px;
+   height: 150px;
+   object-fit: cover;
+   cursor: pointer;
+}
+
+/* Сделать переключение по клику */
+
+/* ==============Resident================= */
