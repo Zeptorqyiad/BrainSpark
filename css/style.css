@@ -632,8 +632,11 @@ body {
    align-items: center;
    gap: 12px;
 }
-.communicate__social__link a {
+.social__link {
    width: 32px;
    height: 32px;
-   background-color: inherit;
+}
+
+.social__link svg #Rectangle:hover {
+   fill: var(--lightpink-color);
 }
