@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+/*--------------------*/
+
+:root {
+   --violet-color: #6818d0;
+   --darkblue-color: #163152;
+   --grey-color: #424e5c;
+   --lightpink-color: #f0eeff;
+   --white-color: #ffffff;
+   --lightviolet-color: #9747ff;
+   --orange-color: #f0873c;
+}
+
+[class*='__container'] {
+   max-width: 1270px;
+   margin: 0 auto;
+}
+
+[class*='_&container'] {
+   max-width: 836px;
+   margin: 0 auto;
+}
+
+.wrapper {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+body {
+   font-family: Roboto;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+/* ==============Header================= */
+
+.header {
+   position: relative;
+   background-color: var(--lightpink-color);
+   height: 160px;
+}
+
+.header__content {
+   display: flex;
+   padding: 20px 0 40px 0;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.header__leftside {
+   display: flex;
+   gap: 60px;
+   align-items: flex-end;
+}
+.logo__image {
+   width: 105px;
+   height: 100px;
+}
+.menu__body {
+   display: flex;
+}
+
+.menu__list:not(:last-child) {
+   margin-right: 30px;
+}
+
+.menu__link {
+   color: var(--darkblue-color);
+   line-height: 26px;
+   transition: color 0.1s ease 0s;
+}
+
+.menu__link:focus {
+   color: var(--violet-color);
+}
+
+.menu__link:hover {
+   color: #424e5c;
+}
+
+.menu__link:active:focus {
+   color: var(--orange-color);
+   text-decoration: underline;
+}
+
+.header__user-icon {
+   cursor: pointer;
+   transition: color 0.3s ease 0s;
+}
+
+.header__user-icon:hover #Union__Stroke {
+   fill: #6818d0;
+}
+
+/* Сделать иконку User в шапке */
+
+/* ==============Banner================= */
+
+.banner {
+   position: relative;
+}
+
+.banner__content {
+   padding: 50px 0;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
+.banner__block-text {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   align-items: flex-end;
+}
+.block-text__title {
+   color: var(--darkblue-color);
+   font-size: 64px;
+   font-weight: 700;
+   line-height: 64px;
+}
+.block-text__text {
+   color: var(--darkblue-color);
+   font-size: 40px;
+   font-weight: 300;
+   line-height: 60px;
+}
+
+/* ==============Blog================= */
+
+.blog {
+   background-color: var(--lightpink-color);
+}
+.blog__content {
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+   padding: 100px 0;
+}
+.row__blog-content {
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--white-color);
+}
+.row__blog-leftside {
+   padding: 20px 20px 40px 20px;
+}
+.rightside-image {
+   width: 610px;
+   height: 260px;
+   object-fit: cover;
+}
+.row__blog-block-text {
+   max-width: 570px;
+}
+.row__blog-text {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+.row__blog-title {
+   color: var(--violet-color);
+   font-size: 28px;
+   font-weight: 500;
+   line-height: 36px;
+   margin-bottom: 12px;
+}
+.row__blog-text p {
+   color: var(--darkblue-color);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+}
+
+.row__blog-continue {
+   display: flex;
+   justify-content: flex-end;
+   margin: 12px 0 0 auto;
+}
+.open-blog {
+   color: var(--orange-color);
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 21px;
+   text-decoration: underline;
+   transition: all 0.3s ease 0s;
+}
+
+.open-blog:hover {
+   color: var(--lightpink-color);
+   text-decoration: underline;
+}
+.open-blog:focus {
+   color: var(--darkblue-color);
+   text-decoration: underline;
+}
+
+.open-blog:active:focus {
+   color: var(--violet-color);
+   text-decoration: underline;
+}
+
+/* ==============Event================= */
+
+.event__content {
+   padding: 70px 0;
+}
