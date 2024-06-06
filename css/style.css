@@ -180,11 +180,26 @@ body {
    transition: color 0.3s ease 0s;
 }
 .header__user-icon:hover #Union__Stroke {
-   fill: #6818d0;
+   fill: var(--violet-color);
 }
-
-/* Сделать иконку User в шапке */
-
+.header__user-icon:focus #Union__Stroke {
+   fill: var(--darkblue-color);
+}
+.header__user-icon:focus #Property3 {
+   stroke-opacity: 1;
+}
+.header__user-icon:active:focus #Property2 {
+   fill: var(--violet-color);
+}
+.header__user-icon:active:focus #Property3 {
+   stroke-opacity: 0;
+}
+.header__user-icon:active:focus #Union__Stroke {
+   fill: var(--white-color);
+}
+.header__user-icon:active:focus #Union {
+   fill: var(--lightviolet-color);
+}
 /* ==============Banner================= */
 
 .banner {
@@ -292,7 +307,6 @@ body {
    font-weight: 400;
    line-height: 26px;
 }
-/* Сделать раскрытие элементов */
 
 /* ==============Event================= */
 
@@ -325,8 +339,13 @@ body {
    gap: 13px;
    margin-bottom: 60px;
 }
-.profile__image {
+.profile-block-image {
    position: relative;
+}
+.vk-image-profile {
+   position: absolute;
+   bottom: 10px;
+   left: -6px;
 }
 .profile-block {
    display: flex;
@@ -672,10 +691,22 @@ body {
 .social__link {
    width: 32px;
    height: 32px;
+   border-radius: 4px;
 }
-
-.social__link svg #Rectangle:hover {
+.social__link:hover #Frame {
    fill: var(--lightpink-color);
+}
+.social__link:focus #Frame {
+   fill: var(--violet-color);
+}
+.social__link:focus #Foreground {
+   fill: var(--white-color);
+}
+.social__link:active:focus #Foreground {
+   fill: var(--white-color);
+}
+.social__link:active:focus #Frame {
+   fill: var(--darkblue-color);
 }
 
 /* ===============Footer================ */
