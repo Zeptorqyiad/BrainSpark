@@ -281,12 +281,17 @@ body {
    color: var(--darkblue-color);
    text-decoration: underline;
 }
-
 .open-blog:active:focus {
    color: var(--violet-color);
    text-decoration: none;
 }
-
+.row__blog-text-hidden {
+   display: none;
+   color: var(--darkblue-color);
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+}
 /* Сделать раскрытие элементов */
 
 /* ==============Event================= */
@@ -472,8 +477,6 @@ body {
    cursor: pointer;
 }
 
-/* Сделать переключение по клику */
-
 /* ==============Resident================= */
 
 .resident {
@@ -610,7 +613,6 @@ body {
    line-height: 34px;
 }
 .communicate__adress-block :last-child {
-   cursor: pointer;
    color: var(--darkblue-color);
    font-size: 16px;
    font-weight: 500;
