@@ -260,16 +260,26 @@
 			<section class="gallery _&970&container">
 				<div class="gallery__content">
 					<div class="gallery__title">Галерея</div>
-					<div class="gallery__all-photo">
-						<div class="gallery__main-photo">
-							<img src="./img/gallery/05.jpeg" alt="MainPhoto">
+					<div class='gallery__block'>
+						<div class='col'>
+							<img class="main-image" id='main' src="./img/gallery/05.jpeg">
 						</div>
-						<div class="gallery__mini-photo">
-							<img src="./img/gallery/01.jpeg" alt="miniPhoto">
-							<img src="./img/gallery/02.jpeg" alt="miniPhoto">
-							<img src="./img/gallery/03.jpeg" alt="miniPhoto">
-							<img src="./img/gallery/04.jpeg" alt="miniPhoto">
-							<img src="./img/gallery/05.jpeg" alt="miniPhoto">
+						<div class='col-row'>
+							<div class="image-mini-block">
+								<img class="mini-image" src="./img/gallery/01.jpeg">
+							</div>
+							<div>
+								<img class="mini-image" src="./img/gallery/02.jpeg">
+							</div>
+							<div>
+								<img class="mini-image" src="./img/gallery/03.jpeg">
+							</div>
+							<div>
+								<img class="mini-image" src="./img/gallery/04.jpeg">
+							</div>
+							<div>
+								<img class="mini-image" src="./img/gallery/05.jpeg">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -492,8 +502,8 @@
 				</div>
 			</div>
 		</footer>
-	</div>
-	<script src="js/script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+		<script src="js/script.js"></script>
 </body>
 
 </html>

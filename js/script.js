@@ -19,4 +19,7 @@ showButton2.addEventListener('click', function () {
    blogCont2.style.margin = '0'
 })
 
-// Переключение картинок
+// Переключение картинок Gallery
+$('body').on('click', '.mini-image', function () {
+   $('#main').attr('src', $(this).attr('src'))
+})

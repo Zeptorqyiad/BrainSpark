@@ -455,26 +455,32 @@ body {
    text-transform: uppercase;
    margin-bottom: 60px;
 }
-.gallery__all-photo {
+
+.gallery__block {
    display: flex;
    flex-direction: column;
    gap: 30px;
+   width: 970px;
+   height: 870px;
 }
-.gallery__main-photo img {
+.col-row {
+   display: flex;
+   gap: 30px;
+}
+.main-image {
    width: 970px;
    height: 690px;
    object-fit: cover;
 }
-.gallery__mini-photo {
-   display: flex;
-   flex-wrap: nowrap;
-   gap: 30px;
+.image-mini-block:checked {
+   position: relative;
+   background: rgba(91, 133, 143, 0.67);
+   z-index: 20;
 }
-.gallery__mini-photo img {
+.mini-image {
+   cursor: pointer;
    width: 170px;
    height: 150px;
-   object-fit: cover;
-   cursor: pointer;
 }
 
 /* ==============Resident================= */
