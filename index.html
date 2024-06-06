@@ -264,22 +264,27 @@
 						<div class='col'>
 							<img class="main-image" id='main' src="./img/gallery/05.jpeg">
 						</div>
-						<div class='col-row'>
-							<div class="image-mini-block">
-								<img class="mini-image" src="./img/gallery/01.jpeg">
-							</div>
-							<div>
-								<img class="mini-image" src="./img/gallery/02.jpeg">
-							</div>
-							<div>
-								<img class="mini-image" src="./img/gallery/03.jpeg">
-							</div>
-							<div>
-								<img class="mini-image" src="./img/gallery/04.jpeg">
-							</div>
-							<div>
-								<img class="mini-image" src="./img/gallery/05.jpeg">
-							</div>
+						<div class='col-row' onclick="changeColor()">
+							<label class="image-mini-block" data-image-url="./img/gallery/01.jpeg">
+								<input type="checkbox" id="imageCheckbox" class="radio-presentation">
+								<img id="myImage" class="mini-image" src="./img/gallery/01.jpeg">
+							</label>
+							<label class="image-mini-block" data-image-url="./img/gallery/02.jpeg">
+								<input type="checkbox" id="imageCheckbox2" class="radio-presentation">
+								<img id="myImage2" class="mini-image" src="./img/gallery/02.jpeg">
+							</label>
+							<label class="image-mini-block" data-image-url="./img/gallery/03.jpeg">
+								<input type="checkbox" id="imageCheckbox3" class="radio-presentation">
+								<img id="myImage3" class="mini-image" src="./img/gallery/03.jpeg">
+							</label>
+							<label class="image-mini-block" data-image-url="./img/gallery/04.jpeg">
+								<input type="checkbox" id="imageCheckbox4" class="radio-presentation">
+								<img id="myImage4" class="mini-image" src="./img/gallery/04.jpeg">
+							</label>
+							<label class="image-mini-block" data-image-url="./img/gallery/05.jpeg">
+								<input type="checkbox" id="imageCheckbox5" class="radio-presentation" checked>
+								<img id="myImage5" class="mini-image checked-pres" src="./img/gallery/05.jpeg">
+							</label>
 						</div>
 					</div>
 				</div>

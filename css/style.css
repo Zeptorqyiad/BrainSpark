@@ -472,15 +472,17 @@ body {
    height: 690px;
    object-fit: cover;
 }
-.image-mini-block:checked {
-   position: relative;
-   background: rgba(91, 133, 143, 0.67);
-   z-index: 20;
-}
 .mini-image {
    cursor: pointer;
    width: 170px;
    height: 150px;
+}
+.radio-presentation {
+   display: none;
+   filter: saturate(0.38);
+}
+.checked-pres {
+   filter: grayscale(100%);
 }
 
 /* ==============Resident================= */
