@@ -176,6 +176,7 @@ body {
    text-decoration: underline;
 }
 .header__user-icon {
+   height: 44px;
    cursor: pointer;
    transition: color 0.3s ease 0s;
 }
