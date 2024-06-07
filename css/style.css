@@ -426,11 +426,13 @@ li::marker {
 
 .event__violet-block-text {
    display: flex;
-   flex-direction: column;
-   gap: 24px;
+   justify-content: center;
    margin: 60px 0;
    background-color: var(--violet-color);
    padding: 20px;
+}
+.event__violet-block-text__content {
+   max-width: 750px;
 }
 .event__violet-title {
    color: var(--white-color);
@@ -438,10 +440,9 @@ li::marker {
    font-weight: 500;
    line-height: 34px;
    text-align: center;
+   margin-bottom: 24px;
 }
 .event__violet-subtitle {
-   max-width: 750px;
-   margin: 0 auto;
    color: var(--white-color);
    font-size: 16px;
    font-weight: 400;
@@ -462,6 +463,11 @@ li::marker {
    font-weight: 400;
    line-height: 26px;
    text-align: left;
+}
+.congrats-image {
+   width: 836px;
+   height: 300px;
+   object-fit: cover;
 }
 
 /* ==============Gallery================= */
@@ -493,7 +499,6 @@ li::marker {
 .main-image {
    width: 970px;
    height: 690px;
-   object-fit: cover;
 }
 .mini-image {
    cursor: pointer;
